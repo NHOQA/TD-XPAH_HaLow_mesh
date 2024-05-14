@@ -1,0 +1,6 @@
+[NetDev]
+Name=br0  
+Kind=bridge
+
+#This file is fairly self-explanatory. We’re telling systemd that we want a device called br0 that functions as an 
+#ethernet bridge
