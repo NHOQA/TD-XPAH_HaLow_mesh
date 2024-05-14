@@ -24,7 +24,8 @@ iw dev $INTERFACE set type managed
 iw dev $INTERFACE set 4addr on
 iw dev $INTERFACE set type mesh
 iw dev $INTERFACE set meshid $MESH_NAME
-iw dev $INTERFACE set channel 36 #original channel setting from teledatics 908.5 MHZ w/ 1 MHz bandwid>ip addr add $IP_ADDR dev $INTERFACE
+iw dev $INTERFACE set channel 36 #original channel setting from teledatics 908.5 MHZ w/ 1 MHz bandwidth<br>
+ip addr add $IP_ADDR dev $INTERFACE
 ifconfig $INTERFACE up
 
 #bridge created, IP address assigned and eth0 slaved by systemd files
