@@ -1,0 +1,15 @@
+[Match]
+Name=br0
+
+[Network]
+#edit IP address to the required node static IP
+Address=192.168.200.1/24
+IPMasquerade=ipv4
+DHCPServer=yes
+
+[DHCPServer]
+ServerAddress=192.168.200.100/24
+PoolOffset=100
+PoolSize=20
+EmitDNS=no
+DNS=192.168.200.1
