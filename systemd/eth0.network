@@ -1,0 +1,9 @@
+[Match]
+Name=eth0  
+
+[Network]
+Bridge=br0
+
+#we're telling systemd to look for a device called eth0 
+#and then add it to a bridge called br0 that we haven’t configured yet. Be sure to change eth0 to 
+#match your ethernet card.
