@@ -33,9 +33,8 @@ ifconfig $INTERFACE up
 ip link set dev br0 up
 
 #add mesh connection to bridge
-#ip link set $INTERFACE master br0
-#instead of adding wlan1 to the bridge, add the macsec interface
-ip link set macsec0 master br0
+ip link set $INTERFACE master br0
+
 
 #delete ip from mesh node to avoid conflict
 sudo ip address del $IP_ADDR dev $INTERFACE
