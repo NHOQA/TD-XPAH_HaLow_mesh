@@ -17,8 +17,9 @@ ETH=eth0 #ethernet interface, adjust to match your ethernet interface name
 IP_ADDR=192.168.200.1/24 #adjust to whatever you want, unique address for each node. with this format># x, 192.168.200.x/24
 
 ifconfig $INTERFACE down
-sysctl -w net.ipv4.ip_forward=1
-sysctl -p
+#sysctl lines not needed if bridging interface
+#sysctl -w net.ipv4.ip_forward=1
+#sysctl -p
 iw reg set "US"
 iw dev $INTERFACE set type managed
 iw dev $INTERFACE set 4addr on
