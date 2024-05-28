@@ -7,8 +7,6 @@ After=multi-user.target
 [Service]
 Type=simple
 ExecStartPre=/bin/sleep 3
-#create macsec interface and set up before mesh
-ExecStartPre=/home/natak/macsec.sh
 #set up and start HaLow mesh
 ExecStart=/home/natak/fullmesh2.sh
 WorkingDirectory=/home/natak
