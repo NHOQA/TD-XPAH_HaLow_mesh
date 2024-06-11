@@ -1,4 +1,7 @@
 -OS is raspbian 64 bit bookworm lite<br>
+-pi 4 4gb<br>
+-Teledatics TD-XPAH dongle<br>
+
 
 - Install kernel headers with 'sudo apt install -y raspberrypi-kernel raspberrypi-kernel-headers'<br>
 - Install drivers per teledatics documentation at https://teledatics.com/docs/drivers/<br>
