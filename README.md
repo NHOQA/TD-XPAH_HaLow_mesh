@@ -7,7 +7,7 @@ NOTE: There is no security enabled currently with this setup. Will need to be se
 
 - Install kernel headers with 'sudo apt install -y raspberrypi-kernel raspberrypi-kernel-headers'<br>
 - Install drivers per teledatics documentation at https://teledatics.com/docs/drivers/<br>
-- place br0.netdev, br0.network,and eth0.network in /etc/systemd/network (edit br0.network with IP address you want)<br>
+- place br0.netdev, br0.network,and eth0.network in /etc/systemd/network (edit br0.network with IP address you want for the node you're working on)<br>
 - place fullmesh2.sh in home directory (~), edit IP address/mesh name and make executable 'sudo chmod +x fullmesh2.sh'<br>
 - place fullmesh2.service in etc/systemd/system. Edit correct user name into path to fullmesh2.sh<br>
 - Set permissions with 'sudo chmod 744 ~/fullmesh2.sh' and 'sudo chmod 644 /etc/systemd/system/fullmesh2.service'<br>
