@@ -1,9 +1,4 @@
 #!/bin/bash
-#this is the mesh and bridge scripts combined. successfully tested individually
-#before running script, you will need
-#1. br0.network, br0.netdev, eth0.network placed in etc/systemd/network
-#2. 
-#3. TD_XPAH drivers installed per https://teledatics.com/docs/drivers/
 
 #stop some processes that interfere with what we're trying to do
 systemctl stop wpa_supplicant
